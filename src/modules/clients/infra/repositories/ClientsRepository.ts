@@ -1,8 +1,9 @@
-import { PrismaClient} from "@prisma/client";
+import { clients, PrismaClient} from "@prisma/client";
 import { ICreateClientDTO } from "../../dtos/ICreateClientDTO";
 import { IClientsRepository } from "../../repositories/IClientsRepository";
 
 class ClientsRepository implements IClientsRepository {
+
   private prisma = new PrismaClient({
     log: ["query"]
   })
@@ -17,6 +18,12 @@ class ClientsRepository implements IClientsRepository {
         anotacoes
       }
     })
+  }
+
+  async listClients (): Promise<clients[]> {
+    const clients = await this.prisma.clients.findMany()
+
+    return clients;
   }
 }
 
