@@ -6,5 +6,10 @@
   "repository": "https://github.com/maiajrs/myjob-back",
   "author": "maiajrs <jr.maiafs1@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0"
+  }
 }
