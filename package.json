@@ -1,0 +1,10 @@
+{
+  "name": "myjob-back",
+  "version": "1.0.0",
+  "description": "This is the myjob's api",
+  "main": "src/server.ts",
+  "repository": "https://github.com/maiajrs/myjob-back",
+  "author": "maiajrs <jr.maiafs1@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
